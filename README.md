@@ -55,7 +55,6 @@ pip3 install sklearn
 python3 bot.py #To run the bot
 ```
 For talib and python-binance, please follow the original documentations linked above.
-Installing these libraries should be trivial regardless of platforms.
 
 ---
 
@@ -71,20 +70,3 @@ Open config.py.
 - trade_interval = "5m" or "15m" or "1h" (15m is recommended)
 ---
 
-### Trading Panel
-> User interface of the trading panel
-
-![UI](./img/execute.png)
-
-Note: Depending on which interval you select, the time of "Appending Historical Data" might differ. Give the process some time as the datasets are huge.
-
-### Donation
----
-
-Consider donating to support my development!
-
-![Monero](./img/monero.png)
-
-496vLRikTNdCZacbP8KFd2fjB7bC2Ms5Djp9GpQXhqcBGZHtUXrYBMV6SFR5PqV1pPKsveSv7LAevdhhDPMPx4y4PjM9xXd
-
----
