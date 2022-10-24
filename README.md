@@ -9,7 +9,7 @@ BTC/USDT spot trading pair is selected due to Binance's 0% trading fee. A 56% co
 
 ### Trading Logic
 
-The bot initalizes historical data from 1 Jul, 2020 onwards and a logistic regression model is fitted. After loading, it creates a market order at your specified interval. If the predicted long probability > 0.5, a long order would be executed via market order at time t. The bot then closes the long position at time t+1. Percentage of investment is selected using Kelly's Criterion.
+The bot initalizes historical data from 15 June, 2022 onwards. After loading, it creates a limit order at your specified interval. If the predicted long probability > 0.5, a long order would be executed via limit order at time t. Depending on the prediction on time t+1, a market order may be created at time t+1 to close out the long position at time t.
 
 > Example
 
@@ -18,6 +18,7 @@ The bot initalizes historical data from 1 Jul, 2020 onwards and a logistic regre
 3. At 20:10, the bot predicts long. The bot longs BTC.
 4. At 20:15, the bot predicts long/short.
 5. If long is predicted, long position remains open. Else long position is closed.
+6. Loop between Step 3 and Step 5
 
 ### READ BEFORE USE
 
